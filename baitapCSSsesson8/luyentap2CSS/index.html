@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(84, 38, 126);
+            color: white;
+        }
+
+        .email  {
+            margin: 0 10px ;
+        }
+        .email input{
+            border-style: ridge;
+            background-color: rgb(84, 38, 126);
+            border-color: white;
+            border-radius: 5px;
+        }
+        .name input {
+            border-style: ridge;
+            background-color: rgb(84, 38, 126);
+            border-color: white;
+            border-radius: 5px;
+        }
+        .container{
+            display: flex;
+        }
+        .message textarea{
+            border-style: ridge;
+            background-color: rgb(84, 38, 126);
+            border-color: white;
+            border-radius: 5px;
+            width: 340px; 
+            height: 136px;
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="name">
+                <label for="name">Name</label>
+                <br>
+                <input type="text">
+                <br>
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <br>
+                <input type="email">
+                <br>
+            </div>
+        </div>
+        <div class="message">
+            <label for="message">Message</label>
+            <br>
+            <textarea type="text" rows="5" ></textarea>
+            <br>
+        </div>
+        <button type="submit">SEND MESSAGE</button>
+    </form>
+
+</body>
+
+</html>
